@@ -51,10 +51,12 @@ h2, .assunto-title {
     justify-content: center;
     align-items: center;
     margin: 30px 0;
+    gap: 20px; /* Espaçamento entre imagem e texto */
 }
 
 .left-image img {
     width: 300px;
+    border-radius: 8px; /* Adiciona borda arredondada nas imagens */
 }
 
 .right-text p {
@@ -62,6 +64,7 @@ h2, .assunto-title {
     margin-left: 20px;
     font-size: 16px;
     line-height: 1.6;
+    max-width: 600px; /* Impede que o texto fique muito largo */
 }
 
 /* Caixas de contato */
@@ -74,9 +77,41 @@ h2, .assunto-title {
 
 .contact-box {
     width: 80%;
-    padding: 10px;
+    max-width: 600px; /* Limita a largura das caixas */
+    padding: 15px;
     margin: 10px 0;
     text-align: center;
     color: black;
     font-size: 18px;
+    background-color: #FF9DDB;
+    border-radius: 8px; /* Bordas arredondadas para as caixas */
 }
+
+/* Estilo para seções */
+section {
+    display: none; /* Esconde todas as seções inicialmente */
+}
+
+section.active {
+    display: block; /* Mostra a seção ativa */
+}
+
+/* Estilo para os links de navegação */
+.nav-link {
+    color: #FF6EC6;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.nav-link:hover {
+    color: #FF69B4; /* Cor de destaque ao passar o mouse */
+    transition: color 0.3s ease; /* Transição suave de cor */
+}
+
+.nav-link:active {
+    color: #FF3385; /* Cor quando o link for pressionado */
+}
+
+
